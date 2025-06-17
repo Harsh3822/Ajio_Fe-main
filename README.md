@@ -76,7 +76,7 @@ bash
 Copy
 Edit
 # 1. Clone the repository
-git clone https://github.com/aniketshirsath/Ajio_Be
+git clone https://github.com/Harsh3822/Ajio_Be-main
 
 # 2. Navigate into the project
 cd Ajio_Be
