@@ -11,7 +11,7 @@ const Men = () => {
 
 
   const fetchData = () => {
-    axios.get('https://ajio-be.onrender.com/men', {
+    axios.get('https://ajio-be-main.onrender.com/men', {
       params: {
         _page: page,
         _limit: 8,

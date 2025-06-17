@@ -10,7 +10,7 @@ const Photoframes = () => {
 
 
     const fetchData = () => {
-      axios.get('https://ajio-be.onrender.com/photo-frames', {
+      axios.get('https://ajio-be-main.onrender.com/photo-frames', {
           params: {
               _page: page,
               _limit: 8,

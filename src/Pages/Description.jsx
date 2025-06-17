@@ -11,83 +11,83 @@ const Description = () => {
   const [desdata, setdesdata] = useState([]);
 
   useEffect(() => {
-    axios.get(`https://ajio-be.onrender.com/men/${id}`)
+    axios.get(`https://ajio-be-main.onrender.com/men/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/men-shirts/${id}`)
+    axios.get(`/men-shirts/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/men-pants/${id}`)
+    axios.get(`/men-pants/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/men-tshirt/${id}`)
+    axios.get(`/men-tshirt/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/women/${id}`)
+    axios.get(`/women/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/women-kurtas/${id}`)
+    axios.get(`/women-kurtas/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/women-tshirt/${id}`)
+    axios.get(`/women-tshirt/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/women-sarees/${id}`)
+    axios.get(`/women-sarees/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/kids/${id}`)
+    axios.get(`/kids/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/kids-tops/${id}`)
+    axios.get(`/kids-tops/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/kids-bag/${id}`)
+    axios.get(`/kids-bag/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/kids-jacket/${id}`)
+    axios.get(`/kids-jacket/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/face-wash/${id}`)
+    axios.get(`/face-wash/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/perfumes/${id}`)
+    axios.get(`/perfumes/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/beauty/${id}`)
+    axios.get(`/beauty/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/shampoo/${id}`)
+    axios.get(`/shampoo/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/home-kitchen/${id}`)
+    axios.get(`/home-kitchen/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/wall-decor/${id}`)
+    axios.get(`/wall-decor/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/photo-frames/${id}`)
+    axios.get(`/photo-frames/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
-    axios.get(`https://ajio-be.onrender.com/kitchen/${id}`)
+    axios.get(`/kitchen/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
   }, [id])
@@ -105,7 +105,7 @@ const Description = () => {
       size: "M"
     };
 
-    axios.post("https://ajio-be.onrender.com/cart", cartItem)
+    axios.post("https://ajio-be-main.onrender.com/cart", cartItem)
       .then(() => alert("✅ Added to cart successfully!"))
       .catch(err => console.log("❌ Error adding to cart:", err));
   };
