@@ -2,12 +2,12 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, ButtonGroup, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import ReactLoading from 'react-loading';
+
 const Men = () => {
   const [data, setData] = useState([]);
   const [order, setOrder] = useState('asc');
   const [page, setPage] = useState(1);
-  // const [loading, setloading] = useState(true)
+  const [loading, setloading] = useState(true)
 
 
   const fetchData = () => {
@@ -32,11 +32,7 @@ const Men = () => {
     fetchData();
   }, [page, order])
 
-  const Loading = ({ type, color }) => (
-    <ReactLoading type={'cylon'} color={color} height={'20%'} width={'20%'} />
-);
-
-  return loading ? <h1> Loading </h1> : (
+  return loading ? <h1>Loading ...</h1> : (
     <>
       <Container>
         <Row>
