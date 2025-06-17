@@ -11,7 +11,7 @@ const Description = () => {
   const [desdata, setdesdata] = useState([]);
 
   useEffect(() => {
-    axios.get(`https://ajio-be-main.onrender.com/men/${id}`)
+    axios.get(`https://ajio-be-main-1.onrender.com/men/${id}`)
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err))
 
@@ -105,7 +105,7 @@ const Description = () => {
       size: "M"
     };
 
-    axios.post("https://ajio-be-main.onrender.com/cart", cartItem)
+    axios.post("https://ajio-be-main-1.onrender.com/cart", cartItem)
       .then(() => alert("✅ Added to cart successfully!"))
       .catch(err => console.log("❌ Error adding to cart:", err));
   };

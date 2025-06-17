@@ -10,7 +10,7 @@ const FaceWash = () => {
 
 
     const fetchData = () => {
-      axios.get('https://ajio-be-main.onrender.com/face-wash', {
+      axios.get('https://ajio-be-main-1.onrender.com/face-wash', {
           params: {
               _page: page,
               _limit: 8,

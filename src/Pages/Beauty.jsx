@@ -10,7 +10,7 @@ const Beauty = () => {
 
 
     const fetchData = () => {
-      axios.get('https://ajio-be-main.onrender.com/beauty', {
+      axios.get('https://ajio-be-main-1.onrender.com/beauty', {
           params: {
               _page: page,
               _limit: 8,

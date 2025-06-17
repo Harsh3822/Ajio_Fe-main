@@ -10,7 +10,7 @@ const KidsTops = () => {
 
 
     const fetchData = () => {
-      axios.get('https://ajio-be-main.onrender.com/kids-tops', {
+      axios.get('https://ajio-be-main-1.onrender.com/kids-tops', {
           params: {
               _page: page,
               _limit: 8,

@@ -10,7 +10,7 @@ const WomenSarees = () => {
 
 
     const fetchData = () => {
-      axios.get('https://ajio-be-main.onrender.com/women-sarees', {
+      axios.get('https://ajio-be-main-1.onrender.com/women-sarees', {
           params: {
               _page: page,
               _limit: 8,
