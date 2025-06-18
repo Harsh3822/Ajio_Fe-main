@@ -1,7 +1,7 @@
 # 🛍️ AJIO - React E-commerce Website
 AJIO is a fully responsive e-commerce website built using React.js, inspired by the sleek and trendy shopping experience of the AJIO platform. It features intuitive navigation, clean UI, modern styling, and interactive product/cart components — all crafted using best practices in modern frontend development.
 
-🔗 Live Demo: https://ajio-fe.vercel.app/
+🔗 Live Demo: https://ajio-fe-main.vercel.app/
 
 📸 UI Screenshots
 🎯 Hero Section – AJIO Homepage
